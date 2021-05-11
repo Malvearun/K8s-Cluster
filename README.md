@@ -51,8 +51,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ### Reference links:
 
-follow the Documentation page for kubernetes installing 
-[kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
-[kubeadm create a cluster](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
+follow the Documentation page for kubernetes installing   
 
-ku
+[kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)   
+[create a cluster with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)   
+
