@@ -1,5 +1,7 @@
 # K8s-Cluster
 
+
+
 `hostname` check the hostname, if require to change to server and clients   
 `vim /etc/hostname`   
 `vim /etc/hosts`   
@@ -45,3 +47,12 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 `kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`
 `kubectl get nodes` nodes will be ready.
 `kubectl run nginx --image=nginx`
+
+
+### Reference links:
+
+follow the Documentation page for kubernetes installing 
+[kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+[kubeadm create a cluster](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
+
+ku
