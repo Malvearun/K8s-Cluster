@@ -5,7 +5,7 @@
 `vim /etc/hosts`   
 `reboot`   
 
-## On all nodes:
+### On all nodes:
 
 `sudo apt-get update && sudo apt-get install -y apt-transport-https curl`    
 `curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -`   
@@ -26,7 +26,7 @@ EOF
 `apt-get update && apt-get upgrade`
 
 
-## only on master (if not working change to sudo)
+### only on master (if not working change to sudo)
  
 `kubeadm init --pod-network-cidr=10.244.0.0/16 -v=9`
 
@@ -36,11 +36,11 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
-## Worker nodes: change to sudo first
+### Worker nodes: change to sudo first
 `kubeadm join 172.31.22.206:6443 --token ********* \
     --discovery-token-ca-cert-hash sha256:************`
 
-## Only on master node:
+### Only on master node:
 `kubectl get nodes` nodes will not be ready, have to install the cni
 `kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`
 `kubectl get nodes` nodes will be ready.
