@@ -1,7 +1,7 @@
 # K8s-Cluster
 
 
-Switch to `Sudo su`
+Switch to `Sudo su`   
 `hostname` check the hostname, if require to change to server and clients   
 `vim /etc/hostname`   
 `vim /etc/hosts`   
