@@ -44,10 +44,10 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
     --discovery-token-ca-cert-hash sha256:************`
 
 ### Only on master node:
-`kubectl get nodes` nodes will not be ready, have to install the cni
-`kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`
-`kubectl get nodes` nodes will be ready.
-`kubectl run nginx --image=nginx`
+`kubectl get nodes` nodes will not be ready, have to install the cni   
+`kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml`   
+`kubectl get nodes` nodes will be ready.   
+`kubectl run nginx --image=nginx`   
 
 
 ### Reference links:
