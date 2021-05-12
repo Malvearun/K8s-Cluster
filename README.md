@@ -19,13 +19,13 @@ deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF  
 ```
 
-`sudo apt-get update`
-`sudo apt install docker.io -y`
-`sudo apt-get install -y kubelet kubeadm kubectl`
-`sudo apt-mark hold kubelet kubeadm kubectl`
-`systemctl daemon-reload`
-`systemctl restart kubelet`
-`apt-get update && apt-get upgrade`
+`sudo apt-get update`   
+`sudo apt install docker.io -y`    
+`sudo apt-get install -y kubelet kubeadm kubectl`    
+`sudo apt-mark hold kubelet kubeadm kubectl`   
+`systemctl daemon-reload`   
+`systemctl restart kubelet`   
+`apt-get update && apt-get upgrade`    
 
 
 ### only on master (if not working change to sudo)
