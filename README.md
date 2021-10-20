@@ -21,7 +21,20 @@ EOF
 ```
 
 `sudo apt-get update`   
-`sudo apt install docker.io -y`    
+`sudo apt install docker.io -y` or install containerd with below script
+
+```
+#!/bin/bash
+
+echo "[TASK 5] Install containerd runtime"
+apt update -qq >/dev/null 2>&1
+apt install -qq -y containerd apt-transport-https >/dev/null 2>&1
+mkdir /etc/containerd
+containerd config default > /etc/containerd/config.toml
+systemctl restart containerd
+systemctl enable containerd >/dev/null 2>&1
+```
+
 `sudo apt-get install -y kubelet kubeadm kubectl`    
 `sudo apt-mark hold kubelet kubeadm kubectl`   
 `systemctl daemon-reload`   
