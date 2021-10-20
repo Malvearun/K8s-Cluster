@@ -32,6 +32,7 @@ EOF
 ### only on master (if not working change to sudo)
  
 `kubeadm init --pod-network-cidr=10.244.0.0/16 -v=9`
+if error with preflight then `kubeadm init --pod-network-cidr=10.244.0.0/16 -v=9 --ignore-preflight-errors=all` after `kubeadm reset     // restart kubeadm`
 
 ```
 mkdir -p $HOME/.kube
